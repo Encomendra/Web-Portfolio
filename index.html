@@ -1,442 +1,316 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Frontend Portfolio</title>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frontend Portfolio</title>
 
-		<!-- Start of Bootstrap Link -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<!-- End of Bootstrap Link -->
+        <!-- Bootstrap Link Start -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Bootstrap Link End -->
 
-		<!-- Font Start -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
-		<!-- Font End -->
+        <!-- Font Start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+        <!-- Font End -->
 
-		<!-- Start of CSS Link -->
-	    <link rel="stylesheet" type="text/css" href="./index.css">
-	    <!-- End of CSS Link -->
-	</head>
+        <!-- CSS Link Start -->
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <!-- CSS Link End -->
+    </head>
+    <body>
+        <!-- Navbar Section Start -->
+        <nav class="fixed-navbar justify-content-center">
+            <ul class="justify-content-center" id="navbar-list">
+                <li><a href="#about" id="navbar-texts">About</a></li>
+                <li><a href="#tools" id="navbar-texts">Tools</a></li>
+                <li><a href="#projects" id="navbar-texts">Projects</a></li>
+                <li><a href="#contact" id="navbar-texts">Contact Me</a></li>
+            </ul>
+        </nav>
+        <!-- Navbar Section End -->
 
-	<body>
+        <!-- About Section Start -->
+		<div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row container justify-content-center" id="about">
+            <img src="./images/developer-img.png" alt="Profile Picture" id="profile-picture">
+            <div class="container col-6-lg d-flex-col" id="about-me">
+                <p id="profile-headline">ABOUT PERSONAL</p>
+                <p id="profile-intro">Hello, Im Benedict Gabriel</p>
+                <p id="profile-lastname-highlight">Larisma</p>
+                <p id="line-profile">.</p>
+                <p id="profile-description">I'm a web developer who loves creating awesome websites and apps. I'm all about making things work smoothly and look great. The web is where my passion shines, and I enjoy collaborating with teams to make projects extraordinary.</p>
+                <p id="profile-signature">Benedict Gabriel Larisma</p>
+                <div id="profile-buttons" class="d-flex justify-content-around col-5">
+                    <a href="https://www.facebook.com/Call.me.Gavvyriyel/"><img src="./images/buttons/facebook.png" alt="Facebook Icon" id="facebook-icon" class="links-to-profile"></a>
+                    <a href="https://www.linkedin.com/in/benedict-larisma-b66a21274/"><img src="./images/buttons/linkedin.png" alt="LinkedIn Icon" id="linkedin-icon" class="links-to-profile"></a>
+                    <a href="https://github.com/Encomendra"><img src="./images/buttons/github.png" alt="Github Icon" id="github-icon" class="links-to-profile"></a>
+                </div>
+            </div>
+        </div>
+		<!-- About Section End  -->
 
-		<!-- Start of Landing Section -->
-		<div class="container-fluid" id="landing">
+        <!-- Tools Section Start -->
+		<div class="container-fluid" id="tools">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div id="tools-images">
+                        <div class="carousel-item active" id="item-1">
+                            <div class="d-flex justify-content-around align-self-center container">
+                                <div class="row" id="html-tools">
+                                    <img src="./images/tools/html.png" alt="First slide" class="tools">
+                                    <p id="tools-text">HTML</p>
+                                </div>
+                                <div class="row" id="css-tools">
+                                    <img src="./images/tools/css.png" alt="First slide" class="tools">
+                                    <p id="tools-text">CSS</p>
+                                </div>
+                                <div class="row" id="bootstrap-tools">
+                                    <img src="./images/tools/bootstrap.png" alt="First slide" class="tools">
+                                    <p id="tools-text">Bootstrap</p>
+                                </div>
+                                <div class="row" id="javascript-tools">
+                                    <img src="./images/tools/javascript.png" alt="First slide" class="tools">
+                                    <p id="tools-text">JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="item-2">
+                            <div class="d-flex justify-content-around align-self-center container">
+                                <div class="row" id="mongodb-tools">
+                                    <img src="./images/tools/mongodb.png" alt="Second slide" class="tools">
+                                    <p id="tools-text">MongoDB</p>
+                                </div>
+                                <div class="row" id="expressjs-tools">
+                                    <img src="./images/tools/expressjs.png" alt="Second slide" class="tools">
+                                    <p id="tools-text">ExpressJS</p>
+                                </div>
+                                <div class="row" id="reactjs-tools">
+                                    <img src="./images/tools/reactjs.png" alt="Second slide" class="tools">
+                                    <p id="tools-text">ReactJS</p>
+                                </div>
+                                <div class="row" id="nodejs-tools">
+                                    <img src="./images/tools/nodejs.png" alt="First slide" class="tools">
+                                    <p id="tools-text">NodeJS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="item-3">
+                            <div class="d-flex justify-content-around align-self-center container">
+                                <div class="row" id="git-tools">
+                                    <img src="./images/tools/git.png" alt="Third slide" class="tools">
+                                    <p id="tools-text">Git</p>
+                                </div>
+                                <div class="row" id="postman-tools">
+                                    <img src="./images/tools/postman.png" alt="Third slide" class="tools">
+                                    <p id="tools-text">Postman</p>
+                                </div>
+                                <div class="row" id="sublime-tools">
+                                    <img src="./images/tools/sublime.png" alt="Third slide" class="tools">
+                                    <p id="tools-text">Sublime</p>
+                                </div>
+                                <div class="row" id="vscode-tools">
+                                    <img src="./images/tools/vscode.png" alt="Third slide" class="tools">
+                                    <p id="tools-text">VSCode</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="indicator">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Tools Section End -->
 
-		    <!-- Start of NavBar -->
-		    <div class="row">
-			    <nav class="navbar navbar-expand-lg navbar-expand-md fixed-top navbar-light" id="navbar">
-			        <a class="navbar-brand" href="#landing">
-			        	<img src="./images/logo.jpg" width="35" height="35" class="d-inline-block align-top rounded-circle" id="logo">
-			        </a>
-			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			            <span class="navbar-toggler-icon"></span>
-			        </button>
-			        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			            <div class="navbar-nav ml-auto">
-			              <a class="nav-item nav-link" href="#landing">Home<span class="sr-only">(current)</span></a>
-			              <a class="nav-item nav-link" href="#projects">Projects</a>
-			              <a class="nav-item nav-link" href="#tools">Tools</a>
-			              <a class="nav-item nav-link" href="#contact">Contact</a>
-			            </div>
-			        </div>
-			    </nav>
-		    </div>
-		    <!-- End of NavBar -->
-		    
-		    <!-- Start of Background 1 -->
-		    <div id="bg-1" class="row">
-		    	<div id="bg-content" class="d-sm-flex mx-sm-auto flex-sm-column justify-content-sm-start flex-md-row flex-lg-row justify-content-lg-start">
-			    	<img src="./images/developer-img.jpg" class="rounded-circle offset-md-1 offset-lg-1 offset-xl-1" id="developer-img">
-			    	<div class="container align-self-md-center col-lg-5 offset-md-1 col-md-6 offset-lg-1 offset-xl-1" id="text-container-1">
-			    		<h2 id="name" class="text-center">Benedict Gabriel J. Larisma</h2>
-			    		<p id="web-developer" class="text-center">Full Stack Web Developer</p>
-			    		<p id="short-description" class="text-justify">Transforming complex code into captivating digital experiences, I am a web developer who crafts innovative solutions that leave a lasting impression.</p>
-			    	</div>
-		    	</div>
-		    </div>
-		    <!-- End of Background 1 -->
+		<!-- Projects Section Start -->
+        <div id="projects">
+            <div class="container col-9 col-sm-8 col-md-7 col-lg-6 col-xl-6 text-center" id="project-head">
+                <p id="project-top-text">MY PROJECTS</p>
+                <p id="project-headline">What I <span id="project-highlight">Did</span></p>
+                <p id="project-description">From my earliest frontend project to diving into fullstack development, I've been on an exciting journey of creating web experiences. Explore my projects and see how they've evolved.</p>
+            </div>
+            <div id="projects-cards" class="container-fluid d-flex justify-content-center flex-column flex-lg-row flex-xl-row">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#modal-1" id="project-card-1">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/projects/first-portfolio.png" alt="Frontend Project" id="project-first-portfolio-img">
+                        </div>
+                        <div class="text-center">
+                            <h3 id="project-card-headline">First Portfolio</h3>
+                        </div>
+                    </button>
+                </div>
+                <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="project-1-modal-title" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project-1-modal-title">E-Commerce Website Backend</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body d-flex-col justify-content-center align-items-center">
+                                <img src="./images/projects/first-portfolio.png" alt="Frontend Project" id="modal-first-portfolio-img">
+                                <div id="modal-1-text-content">
+                                    <p id="modal-1-text">I created my very first frontend portfolio capstone project during my time at the Zuitt coding bootcamp. I built this project using HTML and CSS, and it serves as a showcase of my early web development skills. This portfolio incorporates various CSS animations, including engaging hover effects and smooth transitions, which bring a dynamic feel to the design.</p>
+                                    <p id="modal-1-text">To check out the live version of this portfolio hosted on GitHub, <span id="modal-1-text-button"><a href="######" id="modal-1-text-button-link">click here</a></span>.</p>
+                                    <p id="modal-1-text">If you're interested in exploring the code behind this portfolio, you can access it by <span id="modal-1-text-button"><a href="https://gitlab.com/b282-larisma/projects/-/tree/master/Portfolios/First%20Portfolio?ref_type=heads" id="modal-1-text-button-link">clicking here.</a></span></p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#modal-2" id="project-card-2">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/projects/backend.png" alt="Backend Project" id="project-backend-img">
+                        </div>
+                        <div class="text-center">
+                            <h3 id="project-card-headline">E-Commerce Backend</h3>
+                        </div>
+                    </button>
+                </div>
+                <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="project-2-modal-title" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project-2-modal-title">E-Commerce Website Backend</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body d-flex-col justify-content-center align-items-center">
+                                <img src="./images/projects/backend.png" alt="Backend Project" id="modal-backend-img">
+                                <div id="modal-2-text-content">
+                                    <p id="modal-2-text">In the exciting journey of my coding education at the Zuitt Coding Bootcamp, one of the standout accomplishments is the completion of my backend capstone project. This project is a testament to my growing skills in web development, where I utilized the power of JavaScript and harnessed the robustness of MongoDB as its database.</p>
+                                    <p id="modal-2-text">This capstone is designed to cater to the complex needs of an Ecommerce website. It's not just another project; it's a showcase of my ability to build a backend that supports a dynamic online store, complete with products, orders, and user management.</p>
+                                    <p id="modal-2-text">One key feature that sets this project apart is the dual account system. It seamlessly integrates both admin and non-admin accounts, giving the platform a versatile edge. This means users can interact with the website from different angles, whether they're regular customers or administrators managing the website's backend operations.</p>
+                                    <p id="modal-2-text">If you're eager to explore the intricate functionalities I've implemented, I invite you to delve into the code. <span id="modal-2-text-button"><a href="https://gitlab.com/b282-larisma/capstone/-/tree/master/Larisma-Capstone-2?ref_type=heads" id="modal-2-text-button-link">Click here</a></span> to witness firsthand the art of transforming code into a fully-functional, feature-rich Ecommerce backend.</p>
+                                    <p id="modal-2-text">If you're interested in exploring the deployed project or testing its features using Postman or similar tools, feel free to use this link: <span id="modal-2-text-button-link">https://capstone-2-larisma.onrender.com</span></p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects-cards" class="container-fluid d-flex justify-content-center flex-column flex-lg-row flex-xl-row">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn container" data-toggle="modal" data-target="#modal-3" id="project-card-3">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/projects/vercel.png" alt="Fullstack Project" id="project-fullstack-img">
+                        </div>
+                        <div class="text-center">
+                            <h3 id="project-card-headline">E-Commerce API</h3>
+                        </div>
+                    </button>
+                </div>
+                <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="project-3-modal-title" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project-3-modal-title">E-Commerce API</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body d-flex-col justify-content-center align-items-center">
+                                <img src="./images/projects/vercel.png" alt="Fullstack Project" id="modal-fullstack-img">
+                                <div id="modal-3-text-content">
+                                    <p id="modal-3-text">During my immersive experience at the ZUITT Coding Bootcamp, I had the opportunity to work on an exciting project: an E-commerce website that I developed using React.js and JavaScript.</p>
+                                    <p id="modal-3-text">While the design phase is still in progress, I'm thrilled to share that the website is fully functional. You can navigate through various features and get a glimpse of what the final product will look like once the design is implemented.</p>
+                                    <p id="modal-3-text">This project has been an invaluable learning experience for me. It has given me the chance to apply my skills in real-world development and learn about the complexities of building an E-commerce platform from the ground up. I'm particularly proud of the backend functionality that I've integrated, allowing users to explore products, add items to their cart, and even simulate the checkout process.</p>
+                                    <p id="modal-3-text">Your feedback is invaluable to me, as I'm continuously refining and enhancing this project. If you'd like to explore the website and see its current functionality, please feel free to <span id="modal-3-text-button"><a href="https://capstone-3-larisma.vercel.app/" id="modal-3-text-button-link">click here.</a></span></p>
+                                    <p id="modal-3-text">For those of you interested in the code that powers this project, I've made it available on GitLab. You can review the codebase, dive into the intricacies of the components, and see how I've organized the project. <span id="modal-3-text-button"><a href="https://gitlab.com/b282-larisma/capstone/-/tree/master/Larisma-Captsone-3?ref_type=heads" id="modal-3-text-button-link">Click here</a></span> to see the repository</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Projects Section End -->
 
-		    <!-- Start of Quote -->
-		    <div class="flex-sm-row justify-content-center font-italic" id="quote">
-		    	<p id="quote-text-content">"Web development is the art of weaving imagination and logic into digital tapestries, where lines of code become the threads that connect innovation with functionality, and pixels dance to the rhythm of a creator's vision."</p>
-		    </div>
-		    <!-- End of Quote -->
-
-		</div>
-		<!-- End of Landing -->
-
-
-		<!-- Start of Projects -->
-		<div id="projects" class="container">
-
-			<!-- Title -->
-			<div id="label-1" class="container-fluid">
-			    <p id="projects-label">Projects</p>
-			</div>
-
-		    <div class="row d-flex justify-content-around" id="cards">
-
-		    	<!-- Start of Project 1 -->
-		    	<div class="card col-lg-3 col-md-5 col-sm-8" id="card-1">
-		    	  <div class="card-body">
-		    	  	<div id="carousel" class="carousel slide" data-ride="carousel">
-		    	  	  <div class="carousel-inner">
-		    	  	    <div class="carousel-item active">
-		    	  	      <img class="card-img-top rounded d-block w-100" src="./images/carousels/carousel-1/first-slide.jpg" alt="First slide">
-		    	  	    </div>
-		    	  	    <div class="carousel-item">
-		    	  	      <img class="card-img-top rounded d-block w-100" src="./images/carousels/carousel-1/second-slide.jpg" alt="Second slide">
-		    	  	    </div>
-		    	  	    <div class="carousel-item">
-		    	  	      <img class="card-img-top rounded d-block w-100" src="./images/carousels/carousel-1/third-slide.jpg" alt="Third slide">
-		    	  	    </div>
-		    	  	  </div>
-		    	  	</div>
-		    	    <div id="card-whole-text">
-		    	        <h5 class="card-title mt-3 text-center">Gaming</h5>
-		    	        <p class="card-text text-justify">Web development in gaming refers to the creation of interactive games that can be accessed and played directly through web browsers. It involves utilizing technologies such as HTML5, CSS, and JavaScript to build browser-based games with varying complexity and functionality. Web development in gaming offers the advantage of easy accessibility and compatibility across different devices and platforms, making it a popular choice for casual gaming experiences.</p>
-		    	    </div>
-		    	  </div>
-		    	</div>
-		    	<!-- End of Project 1 -->
-
-		    	<!-- Start of Project 2 -->
-		    	<div class="card col-lg-3 col-md-5 col-sm-8" id="card-2">
-		    	    <div class="card-body">
-		    	    	<div id="carousel" class="carousel slide" data-ride="carousel">
-		    	    	  <div class="carousel-inner">
-		    	    	    <div class="carousel-item active">
-		    	    	      <img class="card-img-top rounded d-block w-100" src="./images/carousels/carousel-2/first-slide.jpg" alt="First slide">
-		    	    	    </div>
-		    	    	    <div class="carousel-item">
-		    	    	      <img class="card-img-top rounded d-block w-100" src="./images/carousels/carousel-2/second-slide.jpg" alt="Second slide">
-		    	    	    </div>
-		    	    	    <div class="carousel-item">
-		    	    	      <img class="card-img-top rounded d-block w-100" src="./images/carousels/carousel-2/third-slide.jpg" alt="Third slide">
-		    	    	    </div>
-		    	    	  </div>
-		    	    	</div>
-		    	        <div id="card-whole-text">
-		    	            <h5 class="card-title mt-3 text-center">Education</h5>
-		    	            <p class="card-text text-justify">
-		    	               Web development in education refers to the use of technology and programming languages to create, design, and maintain websites and web applications that cater to educational purposes. It encompasses the development of online learning platforms, interactive educational tools, and websites for educational institutions. By leveraging web development in education, institutions can enhance accessibility, provide personalized learning experiences, and facilitate effective communication between students and educators.
-		    	            </p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<!-- End of Project 2 -->
-
-		    	<!--Start of Project 3 -->
-		    	<div class="card col-lg-3 col-md-5 col-sm-8" id="card-3">
-		    	    <div class="card-body">
-		    	    	<div id="carousel" class="carousel slide" data-ride="carousel">
-		    	    	  <div class="carousel-inner">
-		    	    	    <div class="carousel-item active">
-		    	    	      <img class="card-img-top rounded d-block w-100" src="./images/carousels/carousel-3/first-slide.jpg" alt="First slide">
-		    	    	    </div>
-		    	    	    <div class="carousel-item">
-		    	    	      <img class="card-img-top rounded d-block w-100" src="./images/carousels/carousel-3/second-slide.jpg" alt="Second slide">
-		    	    	    </div>
-		    	    	    <div class="carousel-item">
-		    	    	      <img class="card-img-top rounded d-block w-100" src="./images/carousels/carousel-3/third-slide.jpg" alt="Third slide">
-		    	    	    </div>
-		    	    	  </div>
-		    	    	</div>
-		    	        <div id="card-whole-text">
-		    	            <h5 class="card-title mt-3 text-center">Designer</h5>
-		    	            <p class="card-text text-justify ">
-		    	                Web development for designers means translating their creative vision and visual designs into interactive and user-friendly digital experiences. It involves collaborating with developers to ensure that the design is implemented accurately and effectively across different devices and browsers.
-		    	            </p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<!-- End of Project 2 -->
-
-		    </div>
-		    <!-- End of Cards -->
-
-		</div>
-		<!-- End of Projects Section -->
-
-		<!-- Start of Tools Section -->
-		<div id="tools" class="container">
-
-			<!-- Title -->
-			<div id="label-2" class="container">
-			    <p id="tools-label">Tools</p>
-			</div>
-
-			<!-- Start of Web Tools -->
-			<div class="row d-flex flex-column justify-content-around">
-
-				<!-- Start of Frontend Tools -->
-				<div class="container" id="tools-container">
-
-					<div class="row">
-
-						<!-- HTML -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">HTML</div>
-							<img src="./images/tools/html.png" id="html-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- CSS -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">CSS</div>
-							<img src="./images/tools/css.png" id="css-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Bootstrap -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">Bootstrap</div>
-							<img src="./images/tools/bootstrap.png" id="bootstrap-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- JavaScript -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">JavaScript</div>
-							<img src="./images/tools/javascript.png" id="javascript-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<!-- End of Frontend Tools -->
-
-				<!-- Start of Backend Tools -->
-				<div class="container" id="tools-container">
-					<div class="row">
-
-						<!-- MongoDB -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">MongoDB</div>
-							<img src="./images/tools/mongodb.png" id="mongodb-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- ExpressJS -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">ExpressJS</div>
-							<img src="./images/tools/expressjs.png" id="expressjs-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- ReactJS -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">ReactJS</div>
-							<img src="./images/tools/reactjs.png" id="reactjs-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- NodeJS -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">NodeJS</div>
-							<img src="./images/tools/nodejs.png" class="logo-image" id="nodejs-logo">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<!-- End of Backend Tools -->
-
-				<!-- Start of Full Stack Tools -->
-				<div class="container" id="tools-container">
-					<div class="row">
-
-						<!-- Heroku -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">Heroku</div>
-							<img src="./images/tools/heroku.png" id="heroku-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Git -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">Git</div>
-							<img src="./images/tools/git.png" id="git-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Postman -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">Postman</div>
-							<img src="https://sdtimes.com/wp-content/uploads/2018/08/logo-glyph.png" id="postman-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Sublime -->
-						<div class="container col-2" id="logo-container">
-							<div class="text-center" id="logo-label">Sublime</div>
-							<img src="./images/tools/sublime.png" id="sublime-logo" class="logo-image rounded">
-							<div id="progress">
-								<div class="text-center" id="progress-label">Mastery</div>
-								<div class="progress">
-								  	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<!-- End of Full Stack Tools -->
-
-			</div>
-			<!-- End of Web Tools -->
-
-		</div>
-		<!-- End of Tools Section -->
-
-
-		<!-- Start of Contact Section -->
+		<!-- Contact Section Start -->
 		<div id="contact" class="container-fluid">
-
-			<!-- Title -->
-			<div id="label-3" class="container">
-			    <p id="contact-label">Contact</p>
-			</div>
-
-			<!-- Start of Contact Buttons -->
-			<div class="container col-10" id="buttons">
-				<div class="row d-flex justify-content-center">
-					<a href="https://www.facebook.com/Call.me.Gavvyriyel/"><img src="./images/buttons/facebook.png" id="facebook-logo"></a>
-					<a href="https://gitlab.com/GabLarisma"><img src="./images/buttons/gitlab.png" id="gitlab-logo"></a>
-					<a href="https://www.linkedin.com/in/benedict-larisma-b66a21274/"><img src="./images/buttons/linkedin.png" id="linkedin-logo"></a>
-					<a href="https://github.com/Encomendra"><img src="./images/buttons/github.png" id="github-logo"></a>
-				</div>
-			</div>
-			<!-- End of Contact Buttons -->
-
-			<div class="row d-flex-row justify-content-start" id="contact-content">
-
-				<!-- Start of Side Text -->
-				<div class="col-sm-4 offset-1 justify-content-center font-italic" id="side-text">
-		    		<p id="side-text-content">"Embrace the power of code and let your creativity soar, for as a web developer, you have the ability to shape the digital world and bring your visions to life."</p>
-		    	</div>
-				<!-- End of Side Text -->
-
-				<!-- Start of Forms -->
-		    	<div class="container col-sm-4" id="forms">
-
-		            <!-- Start of Content -->
-		            <form> 
-		            	<div class="row d-flex justify-content-center">
-		            		<h5>Contact Me</h5>
-		            	</div>
-		                <div class="form-group">
-		                    <label for="Input1">Name</label>
-		                    <input type="text" class="form-control" id="Input1" placeholder="Your Name">
-		                </div>
-		                <div class="form-group">
-		                    <label for="Input1">Email Address</label>
-		                    <input type="text" class="form-control" id="Input1" placeholder="name@example.com">
-		                </div>
-		                <div class="form-group">
-		                    <label for="Input1">Contact Number</label>
-		                    <input type="text" class="form-control" id="Input1" placeholder="+63 900 000 0000">
-		                </div>
-		                <div class="form-group">
-		                    <label for="Textarea1">Message</label>
-		                    <textarea class="form-control" id="Textarea1" rows="6"></textarea>
-		                    <button type="button" class="btn btn-dark mt-3" data-toggle="modal" data-target="#modal">Send Email
-		                    </button>
-		                </div>
-		            </form>
-		            <!-- End of Content -->
-
-		            <!-- Modal -->
-		            <div class="modal fade text-dark" id="modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-		                <div class="modal-dialog" role="document">
-		                    <div class="modal-content">
-		                        <div class="modal-header">
-		                            <h5 class="modal-title" id="ModalLabel">Thank you for contacting us!</h5>
-		                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		                            <span aria-hidden="true">&times;</span>
-		                            </button>
-		                        </div>
-		                        <div class="modal-body">Message Successfully Sent
-		                        </div>
-		                        <div class="modal-footer">
-		                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		            <!-- Modal End -->
-
-		        </div>
-		    <!-- End of Forms -->
-
-			</div>
+            <div class="row d-flex justify-content-center">
+                <h1 id="contact-header">Contact <span id="contact-highlight">Me</span></h1>
+            </div>
+            <div class="container-lg container-xl container-fluid- container-fluid-sm container-fluid-md d-flex justify-content-lg-around justify-content-xl-around flex-lg-row flex-xl-row" id="contact-container">
+                <form class="col-lg-5 col-xl-5 col-10 col-sm-10 col-md-10" id="form"> 
+                    <div class="form-group">
+                        <label for="name" id="form-label">Name</label>
+                        <input type="text" class="form-control" id="form-label" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="form-label">Email Address</label>
+                        <input type="text" class="form-control" id="form-label" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="number" id="form-label">Contact Number</label>
+                        <input type="text" class="form-control" id="form-label" required placeholder="+63 900 000 0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-box" id="form-label">Message</label>
+                        <textarea class="form-control" id="form-label" rows="6"></textarea>
+                        <button type="button" class="btn btn-dark mt-3" data-toggle="modal" data-target="#modal-contact" id="form-label">Send Email
+                        </button>
+                    </div>
+                </form>
+                <div class="col-4" id="contact-image">
+                    <img src="./images/contacts/contact-me.png" id="contact-me-img">
+                </div>
+            </div>
+            <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" id="modal-contact-content">
+                        <div class="modal-header" id="modal-contact-header">
+                            <h5 class="modal-title" d="modal-contact-label">Thank you for contacting!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="modal-contact-body">
+                            Message Successfully Sent
+                        </div>
+                        <div class="modal-footer" id="modal-contact-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
-		<!-- End of Contact Section -->
+		<!-- Contact Section End -->
 
-
-		<!-- Bootstrap Link -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<!-- Bootstrap Link End -->
-
-	</body>
+        <!-- Footer Section Start -->
+        <div class="container-fluid" id="footer">
+            <div class="container">
+                <div id="footer-container" class="row d-flex justify-content-center">
+                    <a href="#about" id="back-to-top">Back to Top</a>
+                    <p id="rights">&copy; 2023 All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section End -->
+        
+        <!-- Bootstrap Link Start -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <!-- Bootstrap Link End -->
+    </body>
 </html>
